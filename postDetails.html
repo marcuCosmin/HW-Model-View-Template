@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    
+    <script src="scripts/comments.model.js"></script>
+    <script src="scripts/users.model.js"></script>
+    <script src="scripts/posts.model.js"></script>
+    <script src="scripts/postDetails.js" defer></script>
+</head>
+<body>
+    <h1 data-post="tile"></h1>
+    <h2 data-post="author"></h2>
+    <div data-post="body"></div>
+    <div style="margin-top: 10px;">
+        <h2>Comments</h2>
+        <ol data-post="comments" style="padding-left: 20px;"></ol>
+    </div>
+    <form data-comment-form>
+
+        <p>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" data-post="comment" cols="30" rows="10" placeholder="This field can not be empty and it can't be filled with spaces! A message is diaplyed in the console if so."></textarea>
+        </p>
+
+        <p><input type="button" data-post="btn" value="Add a Comment"></p>
+        
+    </form>
+</body>
+</html>
